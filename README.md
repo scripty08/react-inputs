@@ -1,10 +1,10 @@
-# @scripty/react-buttons
+# @scripty/react-inputs
 
 # Description
 
-lightweight react button library.
+lightweight react inputs library.
 
-![alt text](./inputs.png "@scripty/react-buttons")
+![alt text](https://raw.githubusercontent.com/scripty08/react-inputs/master/inputs.png "@scripty/react-buttons")
 
 # Usage
 ```bash
