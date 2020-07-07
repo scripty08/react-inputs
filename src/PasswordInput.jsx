@@ -8,6 +8,6 @@ export const PasswordInput = (props) => {
     } = props;
 
     return (
-        <Input {...restProps} placeholder={'Password'} />
+        <Input type={'password'} {...restProps} placeholder={'Password'} />
     );
 };

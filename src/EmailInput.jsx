@@ -8,6 +8,6 @@ export const EmailInput = (props) => {
     } = props;
 
     return (
-       <Input {...restProps} placeholder={'Email'} />
+       <Input type={'email'} {...restProps} placeholder={'Email'} />
     );
 };
