@@ -1,6 +1,5 @@
 const path = require('path');
 const CLIENT_DIR = path.resolve(__dirname, 'examples/client');
-const SRC_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
     entry: [
@@ -11,7 +10,6 @@ module.exports = {
         alias: {
             'react-dom': '@hot-loader/react-dom',
             '@client': CLIENT_DIR,
-            '@src': SRC_DIR
         }
     },
     output: {

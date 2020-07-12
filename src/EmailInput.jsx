@@ -1,6 +1,6 @@
 import React from 'react';
 import './Input.scss';
-import { Input } from '@src/Input';
+import { Input } from './Input';
 
 export const EmailInput = (props) => {
     const {
