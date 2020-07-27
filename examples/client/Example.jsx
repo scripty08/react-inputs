@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
-import { Input, UsernameInput } from '@src';
-import { PasswordInput } from '@src/PasswordInput';
-import { EmailInput } from '@src/EmailInput';
-import { SearchInput } from '@src/SearchInput';
+import { PasswordInput, EmailInput , SearchInput, Input, UsernameInput} from '../../src';
 
 export const Example = () => {
 

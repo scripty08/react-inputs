@@ -1,5 +1,5 @@
 import React from 'react';
-import './Input.scss';
+import { Container, HelpLink, Label, StyledInput } from './Styles';
 
 export const Input = (props) => {
     const {
@@ -8,7 +8,8 @@ export const Input = (props) => {
         placeholder = '',
         name = '',
         type = '',
-        helpLink
+        helpLink,
+        ...restProps
     } = props;
 
     const onInputChange = (e) => {
@@ -16,19 +17,20 @@ export const Input = (props) => {
     };
 
     return (
-        <div className={'input'}>
-            <div className={'form-label-group'}>
-                <input
+        <Container>
+                <StyledInput
                     defaultValue={value}
                     placeholder={placeholder}
                     id={name}
                     name={name}
                     type={type}
-                    className={'form-control'}
-                    onChange={onInputChange}/>
-                <label htmlFor={name}> </label>
-            </div>
-            <span className={'help-link'}>{helpLink}</span>
-        </div>
+                    onChange={onInputChange}
+                    {...restProps}
+                />
+                <Label htmlFor={name}> </Label>
+
+                <HelpLink htmlFor={name}> {helpLink} </HelpLink>
+
+        </Container>
     );
 };
